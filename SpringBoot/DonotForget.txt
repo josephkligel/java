@@ -1,0 +1,52 @@
+# Add to src/main/resources/application.properties
+spring.mvc.view.prefix=/WEB-INF/
+
+# Create /src/main/webapp/WEB-INF folder
+
+# Add dependencies to projectName/pom.xml
+
+## Dependency for running Spring Boot apps
+<dependency>
+	<groupId>org.apache.tomcat.embed</groupId>
+	<artifactId>tomcat-embed-jasper</artifactId>
+	<scope>provided</scope>
+</dependency>
+
+## Dependencies for using the JSP tag library
+		
+<dependency>
+	 <groupId>jakarta.servlet.jsp.jstl</groupId>
+	 <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+</dependency>
+<dependency>
+	 <groupId>org.glassfish.web</groupId>
+	 <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+</dependency>
+
+## Dependencies for Bootstrap
+    <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>webjars-locator</artifactId>
+        <version>0.46</version>
+    </dependency>
+    
+    <!-- BOOTSTRAP DEPENDENCIES -->
+    <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>bootstrap</artifactId>
+        <version>5.2.3</version>
+    </dependency>
+
+<!-- for Bootstrap CSS -->
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<!-- YOUR own local CSS -->
+	<link rel="stylesheet" href="/css/main.css"/>
+	<!-- For any Bootstrap that uses JS -->
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+
+# Add tags to top of jsp files
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

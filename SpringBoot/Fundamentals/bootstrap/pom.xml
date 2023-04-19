@@ -8,12 +8,12 @@
 		<version>3.0.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ninja.daikichi</groupId>
-	<artifactId>DaikichiRoutes</artifactId>
+	<groupId>com.codingdojo.bootstrap</groupId>
+	<artifactId>bootstrap</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>DaikichiRoutes</name>
-	<description>Demo project for Spring Boot</description>
+	<name>bootstrap</name>
+	<description>Query parameters with Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -48,6 +48,19 @@
 		         <groupId>org.glassfish.web</groupId>
 		         <artifactId>jakarta.servlet.jsp.jstl</artifactId>
 		</dependency>
+		
+		<dependency>
+	        <groupId>org.webjars</groupId>
+	        <artifactId>webjars-locator</artifactId>
+	        <version>0.46</version>
+	    </dependency>
+	
+	    <!-- BOOTSTRAP DEPENDENCIES -->
+	    <dependency>
+	        <groupId>org.webjars</groupId>
+	        <artifactId>bootstrap</artifactId>
+	        <version>5.2.3</version>
+	    </dependency>
 
 	</dependencies>
 

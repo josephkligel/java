@@ -1,14 +1,20 @@
 package com.ninja.daikichi;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
+// User @RestController to display strings instead of jsp files
 public class DaikichiController {
 	
-	@RequestMapping("/daikichi")
+	@RequestMapping("/")
 	public String index() {
+		return "index.jsp";
+	}
+	
+	@RequestMapping("/daikichi")
+	public String daikichi() {
 		return "Welcome!";
 	}
 	
