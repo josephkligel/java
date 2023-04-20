@@ -24,25 +24,25 @@ spring.mvc.view.prefix=/WEB-INF/
 </dependency>
 
 <!-- Dependencies for Bootstrap -->
-    <dependency>
-        <groupId>org.webjars</groupId>
-        <artifactId>webjars-locator</artifactId>
-        <version>0.46</version>
-    </dependency>
+<dependency>
+	<groupId>org.webjars</groupId>
+	<artifactId>webjars-locator</artifactId>
+    	<version>0.46</version>
+</dependency>
     
     <!-- BOOTSTRAP DEPENDENCIES -->
-    <dependency>
-        <groupId>org.webjars</groupId>
+<dependency>
+	<groupId>org.webjars</groupId>
         <artifactId>bootstrap</artifactId>
         <version>5.2.3</version>
-    </dependency>
+</dependency>
 
 <!-- for Bootstrap CSS -->
-	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-	<!-- YOUR own local CSS -->
-	<link rel="stylesheet" href="/css/main.css"/>
-	<!-- For any Bootstrap that uses JS -->
-	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<!-- YOUR own local CSS -->
+<link rel="stylesheet" href="/css/main.css"/>
+<!-- For any Bootstrap that uses JS -->
+<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 
 
 # Add tags to top of jsp files
