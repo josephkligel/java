@@ -42,6 +42,10 @@ public class BookService {
  public List<Book> booksContaining(String search){
 	 return bookRepository.findByDescriptionContaining(search);
  }
+ 
+ public void deleteById(Long id) {
+	 bookRepository.deleteById(id);
+ }
 }
 
 

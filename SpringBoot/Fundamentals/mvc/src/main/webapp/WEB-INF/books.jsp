@@ -9,7 +9,7 @@
 <!-- For any Bootstrap that uses JS -->
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
  
- <div class="p-5">
+ <div class="py-5 w-75 m-auto">
 	<h1>All Books</h1>
 	<table class="table">
 	    <thead class="table-dark">

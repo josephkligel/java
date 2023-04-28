@@ -16,11 +16,18 @@
 </head>
 <body>
 
-	<div class="p-5">
-		<h3><c:out value="${book.title}" /></h3>
-		<p>Description <c:out value="${book.description }" /></p>
-		<p>Language: <c:out value="${book.language }" /></p>
-		<p>Number of Pages: <c:out value="${book.numberOfPages}" /></p>
+	<div class="my-5 w-50 m-auto card">
+		<h3 class="card-header">${book.title }</h3>
+		<div class="card-body">
+			<p>Description: ${book.description }</p>
+			<p>Language: ${book.language }</p>
+			<p>Number of Pages: ${book.numberOfPages }</p>
+		</div>
+		
+		<form action="/books/${book.id}" method="post">
+		    <input type="hidden" name="_method" value="delete">
+		    <input class="btn btn-danger ms-3 mb-3" type="submit" value="Delete">
+		</form>
 		
 	</div>
 
