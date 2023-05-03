@@ -1,5 +1,16 @@
-# ----- src/main/resources/application.properties -----
-## Make sure to add database, dbuser, and dbpassword
+# Steps for Spring Boot Project
+
+## ----- Step 1: Create Spring Boot Starter project and Add Dependencies -----
+### Dependencies:
+- MySQL Driver
+- Spring Boot DevTools
+- Spring Data JPA
+- Spring Web
+- tomcat-embed-jasper
+- jstl
+
+## ----- Step 2: src/main/resources/application.properties -----
+### Note: Make sure to add database, dbuser, and dbpassword
 spring.mvc.view.prefix=/WEB-INF/
 spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>?createDatabaseIfNotExist=true
 spring.datasource.username=root
@@ -8,9 +19,17 @@ spring.jpa.hibernate.ddl-auto=update
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.mvc.hiddenmethod.filter.enabled=true
 
-# ----- Create /src/main/webapp/WEB-INF folder -----
+## ----- Step 3: Create WEB-INF folder and Packages -----
+Create /src/main/webapp/WEB-INF folder
 
-# ----- Add dependencies to projectName/pom.xml -----
+Create packages for:
+- controllers
+- models
+- repositories
+- services
+
+## ----- Step 4: Add dependencies to projectName/pom.xml -----
+### Note: Add these dependency tags. Keep in mind the starter project already has the required dependencies to boot a spring app.
 
 <!-- Spring boot dependencies  -->
 
@@ -51,7 +70,8 @@ spring.mvc.hiddenmethod.filter.enabled=true
         <version>5.2.3</version>
 </dependency>
 
-## ----- Bootstrap links for HTML files -----
+## ----- Step 5: Bootstrap links for HTML files -----
+### Dependency Tag:
 
 <!-- for Bootstrap CSS -->
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
@@ -61,7 +81,8 @@ spring.mvc.hiddenmethod.filter.enabled=true
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 
 
-# ----- JST library tags for jsp files -----
+## ----- Step 6: JST library tags for jsp files -----
+### Note: JST Library Tags added to top of jsp file(s)
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
