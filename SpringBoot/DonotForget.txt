@@ -57,6 +57,13 @@ Create packages for:
         <artifactId>spring-boot-starter-validation</artifactId>
 </dependency> 
 
+<!-- Bcrypt -->
+  <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+
 <!-- BOOTSTRAP DEPENDENCIES -->
 <dependency>
 	<groupId>org.webjars</groupId>
