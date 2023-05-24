@@ -1,16 +1,14 @@
-package com.ninja.beltexam.repositories;
+package com.ninja.beltexam2.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ninja.beltexam.models.User;
+import com.ninja.beltexam2.models.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 	
-	public User findByEmail(String email);
-	
-	public User findByUsername(String username);
+	Optional<User> findByEmail(String email);
 }
