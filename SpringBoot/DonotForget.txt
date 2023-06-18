@@ -1,6 +1,16 @@
 # Steps for Spring Boot Project
 
+## Step 0: Prereqs:
+- Amazon corretto 17 (Java)
+- Maven: Add to bin folder for Maven to path
+- Spring Tool Suite
+	- Eclipse Marketplace > "Eclipse Enterprise Java and Web Developer Tools"
+	- Install new software > Emmet > http://download.emmet.io/eclipse/updates/
+	- Preferences > Emmet > Add jsp
+
 ## ----- Step 1: Create Spring Boot Starter project and Add Dependencies -----
+### Create new Spring Starter Project
+
 ### Dependencies:
 - MySQL Driver
 - Spring Boot DevTools
