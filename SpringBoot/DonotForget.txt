@@ -6,7 +6,7 @@
 - Spring Tool Suite
 	- Eclipse Marketplace > "Eclipse Enterprise Java and Web Developer Tools"
 	- Install new software > Emmet > http://download.emmet.io/eclipse/updates/
-	- Preferences > Emmet > Add jsp
+	- Windows > Preferences > Emmet > Add jsp to file extensions
 
 ## ----- Step 1: Create Spring Boot Starter project and Add Dependencies -----
 ### Create new Spring Starter Project
